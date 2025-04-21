@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+
+<html lang="hr">
+<head>
+<meta charset="utf-8"/>
+<title>Kviz: Računalne mreže – Svi poglavlja</title>
+<style>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-image: url('https://www.cisco.com/c/dam/en/us/products/collateral/switches/catalyst-1000-series-switches/nb-06-cat1000-switch-anim-cte-en_800.gif');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+  backdrop-filter: brightness(0.9) blur(1px);
+  animation: fadeIn 1.5s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.1);
+  animation: slideUp 1s ease-in-out;
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+h1, h2 {
+  color: #2c3e50;
+  text-align: center;
+  animation: fadeIn 2s ease;
+}
+.question {
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-left: 5px solid #3498db;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.question:hover {
+  background: #eef6fc;
+  transform: scale(1.01);
+}
+.answers label {
+  display: block;
+  margin: 8px 0;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.answers label:hover {
+  background-color: #ecf0f1;
+}
+button {
+  display: block;
+  margin: 40px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+.correct {
+  background-color: #d4edda !important;
+  color: #155724 !important;
+}
+.incorrect {
+  background-color: #f8d7da !important;
+  color: #721c24 !important;
+}
+#result {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #2c3e50;
+  animation: fadeIn 2s ease;
+}
+</style>
+</head>
+<body><div class="container">
+<h1>Kviz: Računalne mreže – CH1 do CH7</h1>
+<h2>Kviz: Računalne mreže – CH1</h2><div class="question">
+<p>1. Koja je glavna uloga poslužitelja (servera) u mreži?</p>
+<div class="answers">
+<label><input name="q1" type="radio" value="A"/> A) Skeniranje mrežnog prometa</label>
+<label><input name="q1" type="radio" value="B"/> B) Slanje zahtjeva drugim uređajima</label>
+<label><input name="q1" type="radio" value="C"/> C) Pohrana korisničkih postavki</label>
+<label><input data-correct="true" name="q1" type="radio" value="D"/> D) Pružanje informacija krajnjim uređajima</label>
+</div>
+</div><div class="question">
+<p>2. Koja je prednost peer-to-peer mreže?</p>
+<div class="answers">
+<label><input name="q2" type="radio" value="A"/> A) Velika skalabilnost</label>
+<label><input name="q2" type="radio" value="B"/> B) Visoka sigurnost</label>
+<label><input data-correct="true" name="q2" type="radio" value="C"/> C) Niska složenost i jednostavno postavljanje</label>
+<label><input name="q2" type="radio" value="D"/> D) Centralizirana administracija</label>
+</div>
+</div><div class="question">
+<p>3. Što je "end device" u mreži?</p>
+<div class="answers">
+<label><input name="q3" type="radio" value="A"/> A) Rezervni uređaj</label>
+<label><input name="q3" type="radio" value="B"/> B) Uređaj koji usmjerava promet</label>
+<label><input name="q3" type="radio" value="C"/> C) Uređaj za nadzor</label>
+<label><input data-correct="true" name="q3" type="radio" value="D"/> D) Uređaj iz kojeg poruka dolazi ili kojem je poruka namijenjena</label>
+</div>
+</div><div class="question">
+<p>4. Koji uređaj je primjer intermedijarnog mrežnog uređaja?</p>
+<div class="answers">
+<label><input name="q4" type="radio" value="A"/> A) Hard disk</label>
+<label><input name="q4" type="radio" value="B"/> B) Tipkovnica</label>
+<label><input data-correct="true" name="q4" type="radio" value="C"/> C) Router</label>
+<label><input name="q4" type="radio" value="D"/> D) Monitor</label>
+</div>
+</div><div class="question">
+<p>5. Koji medij koristi pulsove svjetlosti za prijenos podataka?</p>
+<div class="answers">
+<label><input name="q5" type="radio" value="A"/> A) Metalni vodiči</label>
+<label><input data-correct="true" name="q5" type="radio" value="B"/> B) Optički kablovi</label>
+<label><input name="q5" type="radio" value="C"/> C) Plinovodi</label>
+<label><input name="q5" type="radio" value="D"/> D) Bežični signal</label>
+</div>
+</div><div class="question">
+<p>6. Koja je razlika između fizičke i logičke topologije?</p>
+<div class="answers">
+<label><input data-correct="true" name="q6" type="radio" value="A"/> A) Fizička prikazuje fizički raspored uređaja, a logička protok podataka i adresiranje</label>
+<label><input name="q6" type="radio" value="B"/> B) Fizička koristi IP adrese, a logička MAC adrese</label>
+<label><input name="q6" type="radio" value="C"/> C) Fizička prikazuje korisnike, a logička uređaje</label>
+<label><input name="q6" type="radio" value="D"/> D) Fizička prikazuje adresiranje, a logička raspored kabela</label>
+</div>
+</div><div class="question">
+<p>7. Koji je osnovni zadatak organizacije ICANN?</p>
+<div class="answers">
+<label><input data-correct="true" name="q7" type="radio" value="A"/> A) Upravljanje IP adresama i nazivima domena</label>
+<label><input name="q7" type="radio" value="B"/> B) Pružanje pristupa internetu korisnicima</label>
+<label><input name="q7" type="radio" value="C"/> C) Održavanje fizičke sigurnosti uređaja</label>
+<label><input name="q7" type="radio" value="D"/> D) Pružanje antivirusne zaštite</label>
+</div>
+</div><div class="question">
+<p>8. Koji pojam opisuje mrežu unutar jedne organizacije koja nije javno dostupna?</p>
+<div class="answers">
+<label><input name="q8" type="radio" value="A"/> A) Internet</label>
+<label><input name="q8" type="radio" value="B"/> B) LAN</label>
+<label><input data-correct="true" name="q8" type="radio" value="C"/> C) Intranet</label>
+<label><input name="q8" type="radio" value="D"/> D) Ekstranet</label>
+</div>
+</div><div class="question">
+<p>9. Koja značajka mreže omogućuje da se promet raspodijeli više putem radi otpornosti na greške?</p>
+<div class="answers">
+<label><input name="q9" type="radio" value="A"/> A) Privatnost</label>
+<label><input name="q9" type="radio" value="B"/> B) QoS</label>
+<label><input name="q9" type="radio" value="C"/> C) Skalabilnost</label>
+<label><input data-correct="true" name="q9" type="radio" value="D"/> D) Fault tolerance</label>
+</div>
+</div><div class="question">
+<p>10. Koji pojam označava jamstvo da samo ovlašteni korisnici imaju pristup podacima?</p>
+<div class="answers">
+<label><input name="q10" type="radio" value="A"/> A) Cjelovitost (Integrity)</label>
+<label><input name="q10" type="radio" value="B"/> B) Dostupnost (Availability)</label>
+<label><input data-correct="true" name="q10" type="radio" value="C"/> C) Povjerljivost (Confidentiality)</label>
+<label><input name="q10" type="radio" value="D"/> D) Redundancija (Redundancy)</label>
+</div>
+</div><h2>Kviz: Računalne mreže – CH2</h2><div class="question"><p>11. Koja je glavna svrha operativnog sustava na mrežnom uređaju?</p><div class="answers"><label><input name="q11" type="radio" value="A"/> A) Upravljanje IP adresama</label><label><input name="q11" type="radio" value="B"/> B) Pružanje antivirusne zaštite</label><label><input data-correct="true" name="q11" type="radio" value="C"/> C) Upravljanje resursima između hardvera i softvera</label><label><input name="q11" type="radio" value="D"/> D) Kreiranje korisničkih računa</label></div></div><div class="question"><p>12. Kako se zove način pristupa uređaju pomoću CLI-a preko sigurne udaljene veze?</p><div class="answers"><label><input name="q12" type="radio" value="A"/> A) Console</label><label><input name="q12" type="radio" value="B"/> B) Telnet</label><label><input data-correct="true" name="q12" type="radio" value="C"/> C) SSH</label><label><input name="q12" type="radio" value="D"/> D) GUI</label></div></div><div class="question"><p>13. Koji način rada IOS-a omogućuje pristup svim naredbama i značajkama?</p><div class="answers"><label><input name="q13" type="radio" value="A"/> A) User EXEC mode</label><label><input data-correct="true" name="q13" type="radio" value="B"/> B) Privileged EXEC mode</label><label><input name="q13" type="radio" value="C"/> C) Global Configuration mode</label><label><input name="q13" type="radio" value="D"/> D) Line Configuration mode</label></div></div><div class="question"><p>14. Kako se zove način za brzo dobivanje pomoći u CLI-u IOS-a?</p><div class="answers"><label><input name="q14" type="radio" value="A"/> A) GUI Help</label><label><input name="q14" type="radio" value="B"/> B) Command Wizard</label><label><input data-correct="true" name="q14" type="radio" value="C"/> C) Context-sensitive help</label><label><input name="q14" type="radio" value="D"/> D) System documentation</label></div></div><div class="question"><p>15. Koja naredba kriptira sve lozinke na mrežnom uređaju?</p><div class="answers"><label><input name="q15" type="radio" value="A"/> A) enable secret</label><label><input data-correct="true" name="q15" type="radio" value="B"/> B) service password-encryption</label><label><input name="q15" type="radio" value="C"/> C) login</label><label><input name="q15" type="radio" value="D"/> D) no shutdown</label></div></div><div class="question"><p>16. Koji je format IPv4 adresa?</p><div class="answers"><label><input name="q16" type="radio" value="A"/> A) 8-bitne binarne vrijednosti</label><label><input data-correct="true" name="q16" type="radio" value="B"/> B) 4 decimalna broja između 0 i 255</label><label><input name="q16" type="radio" value="C"/> C) Hexadecimalna notacija</label><label><input name="q16" type="radio" value="D"/> D) 64-bitne vrijednosti s dvotočkama</label></div></div><div class="question"><p>17. Čemu služi naredba `copy running-config startup-config`?</p><div class="answers"><label><input name="q17" type="radio" value="A"/> A) Pokretanje uređaja u konfiguracijskom modu</label><label><input data-correct="true" name="q17" type="radio" value="B"/> B) Spremanje trenutne konfiguracije</label><label><input name="q17" type="radio" value="C"/> C) Resetiranje uređaja</label><label><input name="q17" type="radio" value="D"/> D) Brisanje svih konfiguracija</label></div></div><div class="question"><p>18. Koji program omogućuje emulaciju terminala za spajanje na mrežne uređaje?</p><div class="answers"><label><input name="q18" type="radio" value="A"/> A) Cisco Web GUI</label><label><input name="q18" type="radio" value="B"/> B) Notepad++</label><label><input data-correct="true" name="q18" type="radio" value="C"/> C) PuTTY</label><label><input name="q18" type="radio" value="D"/> D) Photoshop</label></div></div><div class="question"><p>19. Kako se konfigurira IP adresa na virtualnom sučelju switcha?</p><div class="answers"><label><input data-correct="true" name="q19" type="radio" value="A"/> A) interface vlan 1 &gt; ip address ...</label><label><input name="q19" type="radio" value="B"/> B) configure terminal &gt; set ip</label><label><input name="q19" type="radio" value="C"/> C) ip setup</label><label><input name="q19" type="radio" value="D"/> D) vlan interface 1 ip</label></div></div><div class="question"><p>20. Koji je preporučeni način konfiguracije krajnjeg uređaja s IP adresom?</p><div class="answers"><label><input data-correct="true" name="q20" type="radio" value="A"/> A) Automatski putem DHCP-a</label><label><input name="q20" type="radio" value="B"/> B) Ručno bez maske</label><label><input name="q20" type="radio" value="C"/> C) Putem Telnet sesije</label><label><input name="q20" type="radio" value="D"/> D) Povezivanjem na konzolu</label></div></div><h2>Kviz: Računalne mreže – CH3</h2><div class="question"><p>21. Koji je prvi korak u boot sekvenci Cisco switcha?</p><div class="answers"><label><input name="q21" type="radio" value="A"/> A) Učitavanje IOS-a</label><label><input name="q21" type="radio" value="B"/> B) Inicijalizacija flash memorije</label><label><input data-correct="true" name="q21" type="radio" value="C"/> C) Pokretanje POST testa</label><label><input name="q21" type="radio" value="D"/> D) Konfiguracija VLAN-a</label></div></div><div class="question"><p>22. Što označava LED indikator 'STAT' na switchu?</p><div class="answers"><label><input name="q22" type="radio" value="A"/> A) Indikator grešaka</label><label><input name="q22" type="radio" value="B"/> B) Status PoE napajanja</label><label><input data-correct="true" name="q22" type="radio" value="C"/> C) Status porta</label><label><input name="q22" type="radio" value="D"/> D) Status brzine veze</label></div></div><div class="question"><p>23. Kako se konfigurira SVI za udaljeni pristup switchu?</p><div class="answers"><label><input name="q23" type="radio" value="A"/> A) interface vlan 1 &gt; no login</label><label><input data-correct="true" name="q23" type="radio" value="B"/> B) interface vlan 1 &gt; ip address ... &gt; no shutdown</label><label><input name="q23" type="radio" value="C"/> C) enable interface vlan</label><label><input name="q23" type="radio" value="D"/> D) connect vlan 1</label></div></div><div class="question"><p>24. Koja je svrha naredbe 'ip default-gateway' na switchu?</p><div class="answers"><label><input name="q24" type="radio" value="A"/> A) Dodjela IP adrese uređaju</label><label><input name="q24" type="radio" value="B"/> B) Omogućavanje DHCP-a</label><label><input data-correct="true" name="q24" type="radio" value="C"/> C) Definira pristupnu točku za udaljene mreže</label><label><input name="q24" type="radio" value="D"/> D) Postavljanje VLAN ID-a</label></div></div><div class="question"><p>25. Koji je preporučeni način postavljanja brzine i dupleksa na poznate uređaje?</p><div class="answers"><label><input name="q25" type="radio" value="A"/> A) Postavi na auto</label><label><input data-correct="true" name="q25" type="radio" value="B"/> B) Ručno postavljanje</label><label><input name="q25" type="radio" value="C"/> C) Koristi default</label><label><input name="q25" type="radio" value="D"/> D) Omogući VLAN tagging</label></div></div><div class="question"><p>26. Koji je efekt pogrešnog podešenja dupleksa na switch portu?</p><div class="answers"><label><input name="q26" type="radio" value="A"/> A) Povećana sigurnost</label><label><input name="q26" type="radio" value="B"/> B) Brži prijenos podataka</label><label><input data-correct="true" name="q26" type="radio" value="C"/> C) Problemi s povezivanjem</label><label><input name="q26" type="radio" value="D"/> D) Automatsko resetiranje porta</label></div></div><div class="question"><p>27. Što radi naredba 'mdix auto'?</p><div class="answers"><label><input name="q27" type="radio" value="A"/> A) Postavlja IP adresu automatski</label><label><input data-correct="true" name="q27" type="radio" value="B"/> B) Omogućuje automatsko prepoznavanje vrste kabela</label><label><input name="q27" type="radio" value="C"/> C) Resetira port</label><label><input name="q27" type="radio" value="D"/> D) Omogućuje STP</label></div></div><div class="question"><p>28. Koji je korak potreban za aktivaciju router interfejsa?</p><div class="answers"><label><input name="q28" type="radio" value="A"/> A) enable vlan</label><label><input name="q28" type="radio" value="B"/> B) ip default-gateway</label><label><input data-correct="true" name="q28" type="radio" value="C"/> C) no shutdown</label><label><input name="q28" type="radio" value="D"/> D) ip route</label></div></div><div class="question"><p>29. Koja naredba prikazuje trenutačne IP konfiguracije svih portova na routeru?</p><div class="answers"><label><input data-correct="true" name="q29" type="radio" value="A"/> A) show ip interface brief</label><label><input name="q29" type="radio" value="B"/> B) show running-config</label><label><input name="q29" type="radio" value="C"/> C) show interface vlan</label><label><input name="q29" type="radio" value="D"/> D) show startup-config</label></div></div><div class="question"><p>30. Koji je prvi korak u DHCP procesu za klijenta?</p><div class="answers"><label><input name="q30" type="radio" value="A"/> A) DHCPREQUEST</label><label><input name="q30" type="radio" value="B"/> B) DHCPOFFER</label><label><input data-correct="true" name="q30" type="radio" value="C"/> C) DHCPDISCOVER</label><label><input name="q30" type="radio" value="D"/> D) DHCPACK</label></div></div><h2>Kviz: Računalne mreže – CH4</h2><div class="question"><p>31. Što eliminira sudarne domene u mreži?</p><div class="answers"><label><input name="q31" type="radio" value="A"/> A) Hub</label><label><input name="q31" type="radio" value="B"/> B) Router</label><label><input data-correct="true" name="q31" type="radio" value="C"/> C) Switch s full-duplex vezom</label><label><input name="q31" type="radio" value="D"/> D) PoE injektor</label></div></div><div class="question"><p>32. Koji uređaj prekida broadcast domenu?</p><div class="answers"><label><input name="q32" type="radio" value="A"/> A) Switch</label><label><input name="q32" type="radio" value="B"/> B) Hub</label><label><input data-correct="true" name="q32" type="radio" value="C"/> C) Router</label><label><input name="q32" type="radio" value="D"/> D) Repeater</label></div></div><div class="question"><p>33. Koja je osnovna prednost korištenja VLAN-ova?</p><div class="answers"><label><input name="q33" type="radio" value="A"/> A) Veće broadcast domene</label><label><input name="q33" type="radio" value="B"/> B) Brža instalacija</label><label><input data-correct="true" name="q33" type="radio" value="C"/> C) Manje broadcast domene i veća sigurnost</label><label><input name="q33" type="radio" value="D"/> D) Dodjela više IP adresa</label></div></div><div class="question"><p>34. Koji VLAN se koristi za Telnet/SSH pristup?</p><div class="answers"><label><input name="q34" type="radio" value="A"/> A) Voice VLAN</label><label><input data-correct="true" name="q34" type="radio" value="B"/> B) Management VLAN</label><label><input name="q34" type="radio" value="C"/> C) Default VLAN</label><label><input name="q34" type="radio" value="D"/> D) Native VLAN</label></div></div><div class="question"><p>35. Koji VLAN je po defaultu native i management na Cisco uređajima?</p><div class="answers"><label><input name="q35" type="radio" value="A"/> A) VLAN 10</label><label><input name="q35" type="radio" value="B"/> B) VLAN 0</label><label><input data-correct="true" name="q35" type="radio" value="C"/> C) VLAN 1</label><label><input name="q35" type="radio" value="D"/> D) VLAN 99</label></div></div><div class="question"><p>36. Koji protokol se koristi za označavanje VLAN frame-ova na trunk linkovima?</p><div class="answers"><label><input name="q36" type="radio" value="A"/> A) STP</label><label><input name="q36" type="radio" value="B"/> B) VTP</label><label><input data-correct="true" name="q36" type="radio" value="C"/> C) 802.1Q</label><label><input name="q36" type="radio" value="D"/> D) ARP</label></div></div><div class="question"><p>37. Što se događa ako ne postoji Layer 3 uređaj između dvaju VLAN-ova?</p><div class="answers"><label><input name="q37" type="radio" value="A"/> A) Mogu komunicirati</label><label><input name="q37" type="radio" value="B"/> B) Broadcast prolazi između njih</label><label><input data-correct="true" name="q37" type="radio" value="C"/> C) Ne mogu komunicirati</label><label><input name="q37" type="radio" value="D"/> D) Mogu se automatski spojiti</label></div></div><div class="question"><p>38. Koja je maksimalna količina VLAN-ova koju podržava IEEE 802.1Q?</p><div class="answers"><label><input name="q38" type="radio" value="A"/> A) 512</label><label><input name="q38" type="radio" value="B"/> B) 2048</label><label><input data-correct="true" name="q38" type="radio" value="C"/> C) 4096</label><label><input name="q38" type="radio" value="D"/> D) 65536</label></div></div><div class="question"><p>39. Koja naredba se koristi za kreiranje VLAN-a na Cisco switchu?</p><div class="answers"><label><input name="q39" type="radio" value="A"/> A) create vlan &lt;id&gt;</label><label><input data-correct="true" name="q39" type="radio" value="B"/> B) vlan &lt;id&gt;</label><label><input name="q39" type="radio" value="C"/> C) ip vlan &lt;id&gt;</label><label><input name="q39" type="radio" value="D"/> D) interface vlan &lt;id&gt;</label></div></div><div class="question"><p>40. Koja naredba konfigurira trunk port?</p><div class="answers"><label><input data-correct="true" name="q40" type="radio" value="A"/> A) switchport mode trunk</label><label><input name="q40" type="radio" value="B"/> B) interface trunk</label><label><input name="q40" type="radio" value="C"/> C) vlan trunk enable</label><label><input name="q40" type="radio" value="D"/> D) trunk allow all</label></div></div><h2>Kviz: Računalne mreže – CH5</h2><div class="question"><p>41. Što omogućuje komunikaciju između različitih VLAN-ova?</p><div class="answers"><label><input name="q41" type="radio" value="A"/> A) STP</label><label><input data-correct="true" name="q41" type="radio" value="B"/> B) Inter-VLAN routing</label><label><input name="q41" type="radio" value="C"/> C) EtherChannel</label><label><input name="q41" type="radio" value="D"/> D) VTP</label></div></div><div class="question"><p>42. Koji je najskalabilniji način za inter-VLAN routing?</p><div class="answers"><label><input name="q42" type="radio" value="A"/> A) Legacy routing</label><label><input name="q42" type="radio" value="B"/> B) Router-on-a-stick</label><label><input data-correct="true" name="q42" type="radio" value="C"/> C) Layer 3 switch s SVI</label><label><input name="q42" type="radio" value="D"/> D) Trunk port na klijentu</label></div></div><div class="question"><p>43. Koja je glavna prednost Router-on-a-Stick metode?</p><div class="answers"><label><input name="q43" type="radio" value="A"/> A) Podrška za više fizičkih sučelja</label><label><input data-correct="true" name="q43" type="radio" value="B"/> B) Manji broj fizičkih veza potreban</label><label><input name="q43" type="radio" value="C"/> C) Ne koristi subinterface</label><label><input name="q43" type="radio" value="D"/> D) Veća sigurnost</label></div></div><div class="question"><p>44. Kako se subinterface identificira na routeru?</p><div class="answers"><label><input name="q44" type="radio" value="A"/> A) Po MAC adresi</label><label><input name="q44" type="radio" value="B"/> B) Po VLAN tagu</label><label><input data-correct="true" name="q44" type="radio" value="C"/> C) Po nazivu sučelja + broj</label><label><input name="q44" type="radio" value="D"/> D) Po protokolu</label></div></div><div class="question"><p>45. Koja se naredba koristi za konfiguraciju VLAN tagiranja na subinterfaceu?</p><div class="answers"><label><input data-correct="true" name="q45" type="radio" value="A"/> A) encapsulation dot1q &lt;vlan_id&gt;</label><label><input name="q45" type="radio" value="B"/> B) switchport trunk vlan</label><label><input name="q45" type="radio" value="C"/> C) ip route</label><label><input name="q45" type="radio" value="D"/> D) vlan tagging</label></div></div><div class="question"><p>46. Što je potrebno omogućiti na Layer 3 switchu za inter-VLAN routing?</p><div class="answers"><label><input name="q46" type="radio" value="A"/> A) ip default-gateway</label><label><input name="q46" type="radio" value="B"/> B) enable routing</label><label><input data-correct="true" name="q46" type="radio" value="C"/> C) ip routing</label><label><input name="q46" type="radio" value="D"/> D) vlan enable</label></div></div><div class="question"><p>47. Koji je uvjet da bi SVI bio 'up/up' na switchu?</p><div class="answers"><label><input name="q47" type="radio" value="A"/> A) Samo konfigurirana IP adresa</label><label><input name="q47" type="radio" value="B"/> B) Uključen trunk port</label><label><input data-correct="true" name="q47" type="radio" value="C"/> C) Aktivan VLAN i priključen uređaj</label><label><input name="q47" type="radio" value="D"/> D) Omogućen STP</label></div></div><div class="question"><p>48. Koja je uloga naredbe 'no switchport' na Layer 3 switchu?</p><div class="answers"><label><input name="q48" type="radio" value="A"/> A) Isključuje port</label><label><input data-correct="true" name="q48" type="radio" value="B"/> B) Pretvara port u Layer 3 port</label><label><input name="q48" type="radio" value="C"/> C) Aktivira VLAN</label><label><input name="q48" type="radio" value="D"/> D) Briše konfiguraciju</label></div></div><div class="question"><p>49. Koja naredba prikazuje routing tablicu na routeru?</p><div class="answers"><label><input name="q49" type="radio" value="A"/> A) show vlan brief</label><label><input name="q49" type="radio" value="B"/> B) show ip interface brief</label><label><input data-correct="true" name="q49" type="radio" value="C"/> C) show ip route</label><label><input name="q49" type="radio" value="D"/> D) show interfaces trunk</label></div></div><div class="question"><p>50. Koja naredba omogućuje provjeru trunk konfiguracije?</p><div class="answers"><label><input name="q50" type="radio" value="A"/> A) show ip route</label><label><input data-correct="true" name="q50" type="radio" value="B"/> B) show interfaces trunk</label><label><input name="q50" type="radio" value="C"/> C) show vlan id</label><label><input name="q50" type="radio" value="D"/> D) show ip dhcp binding</label></div></div><h2>Kviz: Računalne mreže – CH6</h2><div class="question"><p>51. Koja je osnovna funkcija Spanning Tree Protocola (STP)?</p><div class="answers"><label><input name="q51" type="radio" value="A"/> A) Povećanje propusnosti</label><label><input data-correct="true" name="q51" type="radio" value="B"/> B) Prevencija petlji u Layer 2 mreži</label><label><input name="q51" type="radio" value="C"/> C) Filtriranje broadcast prometa</label><label><input name="q51" type="radio" value="D"/> D) Omogućavanje DHCP usluge</label></div></div><div class="question"><p>52. Što se događa kada STP prepozna redundantnu vezu?</p><div class="answers"><label><input name="q52" type="radio" value="A"/> A) Automatski briše port</label><label><input data-correct="true" name="q52" type="radio" value="B"/> B) Stavlja port u blocking stanje</label><label><input name="q52" type="radio" value="C"/> C) Resetira uređaj</label><label><input name="q52" type="radio" value="D"/> D) Onemogući VLAN tagging</label></div></div><div class="question"><p>53. Koji uređaj STP bira kao referentnu točku za izračunavanje najkraćih putova?</p><div class="answers"><label><input name="q53" type="radio" value="A"/> A) Core router</label><label><input data-correct="true" name="q53" type="radio" value="B"/> B) Root bridge</label><label><input name="q53" type="radio" value="C"/> C) Edge switch</label><label><input name="q53" type="radio" value="D"/> D) DHCP server</label></div></div><div class="question"><p>54. Što označava STP port stanje 'Learning'?</p><div class="answers"><label><input name="q54" type="radio" value="A"/> A) Port je deaktiviran</label><label><input data-correct="true" name="q54" type="radio" value="B"/> B) Port uči MAC adrese, ali ne šalje pakete</label><label><input name="q54" type="radio" value="C"/> C) Port aktivno prosljeđuje promet</label><label><input name="q54" type="radio" value="D"/> D) Port čeka naredbu administratora</label></div></div><div class="question"><p>55. Koji je STP port s najmanjim troškom prema root bridgeu?</p><div class="answers"><label><input name="q55" type="radio" value="A"/> A) Alternate port</label><label><input name="q55" type="radio" value="B"/> B) Designated port</label><label><input data-correct="true" name="q55" type="radio" value="C"/> C) Root port</label><label><input name="q55" type="radio" value="D"/> D) Blocked port</label></div></div><div class="question"><p>56. Koliko VLAN-ova podržava PVST+ (Per-VLAN Spanning Tree)?</p><div class="answers"><label><input name="q56" type="radio" value="A"/> A) Jedan spanning tree za sve VLAN-ove</label><label><input data-correct="true" name="q56" type="radio" value="B"/> B) Jedan po VLAN-u</label><label><input name="q56" type="radio" value="C"/> C) Samo za VLAN 1</label><label><input name="q56" type="radio" value="D"/> D) Samo za trunk portove</label></div></div><div class="question"><p>57. Koji je rezultat Layer 2 petlje ako STP nije omogućen?</p><div class="answers"><label><input name="q57" type="radio" value="A"/> A) Smanjenje broadcasta</label><label><input data-correct="true" name="q57" type="radio" value="B"/> B) Gubitak mrežne povezanosti</label><label><input name="q57" type="radio" value="C"/> C) Bolja sigurnost</label><label><input name="q57" type="radio" value="D"/> D) Brža komunikacija</label></div></div><div class="question"><p>58. Koja je glavna prednost EtherChannel tehnologije?</p><div class="answers"><label><input name="q58" type="radio" value="A"/> A) Onemogućava VLAN-ove</label><label><input data-correct="true" name="q58" type="radio" value="B"/> B) Agregacija više fizičkih veza u jednu logičku</label><label><input name="q58" type="radio" value="C"/> C) Omogućava STP bypass</label><label><input name="q58" type="radio" value="D"/> D) Zamjena za trunk portove</label></div></div><div class="question"><p>59. Koliko maksimalno veza može biti uključeno u jedan EtherChannel?</p><div class="answers"><label><input name="q59" type="radio" value="A"/> A) 4</label><label><input name="q59" type="radio" value="B"/> B) 6</label><label><input data-correct="true" name="q59" type="radio" value="C"/> C) 8</label><label><input name="q59" type="radio" value="D"/> D) 16</label></div></div><div class="question"><p>60. Koji je standardni protokol za EtherChannel kompatibilan s više proizvođača?</p><div class="answers"><label><input name="q60" type="radio" value="A"/> A) PAgP</label><label><input data-correct="true" name="q60" type="radio" value="B"/> B) LACP</label><label><input name="q60" type="radio" value="C"/> C) STP</label><label><input name="q60" type="radio" value="D"/> D) CDP</label></div></div><h2>Kviz: Računalne mreže – CH7</h2><div class="question"><p>61. Koje su dvije glavne funkcije routera?</p><div class="answers"><label><input name="q61" type="radio" value="A"/> A) Preklapanje paketa i analiza prometa</label><label><input data-correct="true" name="q61" type="radio" value="B"/> B) Određivanje najbolje putanje i prosljeđivanje paketa</label><label><input name="q61" type="radio" value="C"/> C) Kreiranje VLAN-ova i filtriranje broadcasta</label><label><input name="q61" type="radio" value="D"/> D) Uklanjanje petlji i segmentacija mreže</label></div></div><div class="question"><p>62. Što je 'najduže poklapanje' (longest match) kod rutiranja?</p><div class="answers"><label><input name="q62" type="radio" value="A"/> A) Najduži tekstualni unos u tablici</label><label><input name="q62" type="radio" value="B"/> B) Ruta s najdužim imenom</label><label><input data-correct="true" name="q62" type="radio" value="C"/> C) Ruta s najvećim brojem poklapanja bitova</label><label><input name="q62" type="radio" value="D"/> D) Ruta s najmanjim prefiksom</label></div></div><div class="question"><p>63. Što se događa ako ruta za odredišnu IP adresu ne postoji u routing tablici?</p><div class="answers"><label><input name="q63" type="radio" value="A"/> A) Router pita korisnika</label><label><input name="q63" type="radio" value="B"/> B) Router koristi slučajni izlazni port</label><label><input data-correct="true" name="q63" type="radio" value="C"/> C) Paket se odbacuje</label><label><input name="q63" type="radio" value="D"/> D) Router automatski šalje ICMP odgovor</label></div></div><div class="question"><p>64. Koja je prednost korištenja Cisco Express Forwarding (CEF)?</p><div class="answers"><label><input name="q64" type="radio" value="A"/> A) Paket se procesira ručno</label><label><input data-correct="true" name="q64" type="radio" value="B"/> B) Manje opterećenje CPU-a i brže rutiranje</label><label><input name="q64" type="radio" value="C"/> C) Jednostavnije konfiguriranje MAC adresa</label><label><input name="q64" type="radio" value="D"/> D) Omogućuje Layer 2 preusmjeravanje</label></div></div><div class="question"><p>65. Koji kod u routing tablici označava direktno povezanu mrežu?</p><div class="answers"><label><input name="q65" type="radio" value="A"/> A) D</label><label><input name="q65" type="radio" value="B"/> B) L</label><label><input data-correct="true" name="q65" type="radio" value="C"/> C) C</label><label><input name="q65" type="radio" value="D"/> D) O</label></div></div><div class="question"><p>66. Što predstavlja 'administrativna udaljenost' (AD) u routing tablici?</p><div class="answers"><label><input name="q66" type="radio" value="A"/> A) Broj skokova do destinacije</label><label><input name="q66" type="radio" value="B"/> B) Razina sigurnosti rute</label><label><input data-correct="true" name="q66" type="radio" value="C"/> C) Povjerenje u izvor rute</label><label><input name="q66" type="radio" value="D"/> D) Veličina paketa</label></div></div><div class="question"><p>67. Koji je AD za statičku rutu u Cisco uređajima?</p><div class="answers"><label><input name="q67" type="radio" value="A"/> A) 0</label><label><input data-correct="true" name="q67" type="radio" value="B"/> B) 1</label><label><input name="q67" type="radio" value="C"/> C) 90</label><label><input name="q67" type="radio" value="D"/> D) 110</label></div></div><div class="question"><p>68. Kako router određuje koji od više ruta za istu destinaciju koristiti?</p><div class="answers"><label><input name="q68" type="radio" value="A"/> A) Nasumično</label><label><input name="q68" type="radio" value="B"/> B) Na temelju imena porta</label><label><input data-correct="true" name="q68" type="radio" value="C"/> C) Na temelju najniže AD vrijednosti</label><label><input name="q68" type="radio" value="D"/> D) Na temelju dužine adrese</label></div></div><div class="question"><p>69. Što označuje kod 'O' u IPv4 routing tablici?</p><div class="answers"><label><input data-correct="true" name="q69" type="radio" value="A"/> A) OSPF dinamika</label><label><input name="q69" type="radio" value="B"/> B) Offline ruta</label><label><input name="q69" type="radio" value="C"/> C) Opcionalna ruta</label><label><input name="q69" type="radio" value="D"/> D) Organizacijska ruta</label></div></div><div class="question"><p>70. Koja je glavna razlika između statičkog i dinamičkog rutiranja?</p><div class="answers"><label><input name="q70" type="radio" value="A"/> A) Statičko je automatsko, a dinamičko nije</label><label><input data-correct="true" name="q70" type="radio" value="B"/> B) Dinamičko se automatski prilagođava promjenama</label><label><input name="q70" type="radio" value="C"/> C) Samo statičko koristi IP adrese</label><label><input name="q70" type="radio" value="D"/> D) Dinamičko se koristi isključivo za IPv6</label></div></div><button onclick="checkAnswers()" type="button">Provjeri rezultat</button><div id="result"></div></div><script>
+function checkAnswers() {
+  let score = 0;
+  let total = document.querySelectorAll('.question').length;
+
+  for (let i = 1; i <= total; i++) {
+    const selected = document.querySelector(`input[name="q${i}"]:checked`);
+    const allOptions = document.querySelectorAll(`input[name="q${i}"]`);
+
+    allOptions.forEach(opt => {
+      const label = opt.parentElement;
+      label.classList.remove("correct", "incorrect");
+
+      if (opt.dataset.correct === "true") {
+        label.classList.add("correct");
+      }
+
+      if (selected && opt === selected && !opt.dataset.correct) {
+        label.classList.add("incorrect");
+      }
+    });
+
+    if (selected && selected.dataset.correct === "true") {
+      score++;
+    }
+  }
+
+  document.getElementById("result").innerText =
+    `Točnih odgovora: ${score} od ${total}`;
+}
+</script></body>
+</html>
